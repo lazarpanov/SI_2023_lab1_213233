@@ -1,0 +1,45 @@
+cd SI_2023_lab1_213233 -> влегувам во директориумот
+git init -> иницијализирам git во директориумот
+git remote add origin https://github.com/lazarpanov/SI_2023_lab1_213233.git -> се поврзувам со remote репозиториумот
+git add README.md -> го додава readme на stage
+git commit -m "Initial commit" -> правиме commit во локалниот репозиториум
+git add SILab1.java -> го додавам фајлот s1.java на stage
+git commit -m "Add java class" -> правам локален commit
+git push origin master -> синхронизација на remote repo со локално repo (upstream)
+git branch bug1
+git branch bug2
+git branch bug3 -> сите команди прават нова гранка од master
+git checkout bug1 -> се префрлам на гранка bug1
+git add SILab1.java -> додаваме датотека на stage
+git commit -m "Fix wrong loop for reading" -> commit на bug1 со соодветна порака
+git checkout bug2 -> се префрламе на bug2
+git add SILab1.java -> додаваме датотека на stage
+git commit -m "Fix wrong condition in filterOddNumbers" -> commit на bug2 со соодветна порака
+git checkout bug3 -> се префрламе на bug3
+git add SILab1.java -> додаваме датотека на stage
+git commit -m "Fix method sumEvenNumbers" -> commit на bug3 со соодветна порака
+git push origin bug3 -> синхронизација на remote repo на гранка bug3
+git checkout bug2 -> префрлање на гранка bug2
+git push origin bug2 -> синхронизација на remote repo на гранка bug2 
+git checkout bug -> префрлање на гранка bug1
+git push origin bug1 -> синхронизација на remote repo на гранка bug1 
+git checkout master -> префрлање на гранка master
+git merge bug1 -> ја спојуваме гранката bug1 кон master (нема конфликти, а стратегијата е fast-forward)
+git push origin master -> синхронизација на master на remote repo со local repo
+git merge bug2 -> ја спојуваме гранката bug2 кон master (нема конфликти, а стратегијата е fast-forward)
+git push origin master -> синхронизација на master на remote repo со local repo
+git checkout bug3 -> префрлање на гранка bug3
+git rebase master -> rebase на гранка bug3 кон master
+git checkout master -> префрлање на master
+git merge bug3 -> спојување на bug3 со master (нема конфликти, а стратегијата е fast-forward)
+git push origin master -> синхронизација на master на remote repo со local repo
+git checkout bug1
+git push origin bug1
+git checkout bug2
+git push origin bug2
+git checkout bug3
+git push origin --force bug3 -> се префрлувам на секоја гранка и правам push за синхронизација на remote repo (за bug3 искористив --force)
+git log -> за досегашните логови
+git add . -> ги додава сите фајлови на stage
+git commit -m "Final commit"
+git push origin master

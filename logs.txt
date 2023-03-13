@@ -1,0 +1,37 @@
+$ git log
+commit 50e4551e51ecd3e68f2721e5c289cf5721f968ac (HEAD -> master, origin/master, origin/bug3, bug3)
+Author: Lazar Panov <lazarpanov2002@gmail.com>
+Date:   Mon Mar 13 18:27:30 2023 +0100
+
+    Fix method sumEvenNumbers
+
+commit f7937fd6c134fe197424339df589a2ddab000494
+Merge: 31ca17e 795ddd0
+Author: Lazar Panov <lazarpanov2002@gmail.com>
+Date:   Mon Mar 13 18:40:32 2023 +0100
+
+    Merge branch 'bug2'
+
+commit 795ddd0213e1590d0c2992f97293760ebce2003e (origin/bug2, bug2)
+Author: Lazar Panov <lazarpanov2002@gmail.com>
+Date:   Mon Mar 13 18:26:15 2023 +0100
+
+    Fix wrong condition in filterOddNumbers
+
+commit 31ca17edd350cae84f61ffc81615acbc8d2042c7 (origin/bug1, bug1)
+Author: Lazar Panov <lazarpanov2002@gmail.com>
+Date:   Mon Mar 13 18:24:40 2023 +0100
+
+    Fix wrong loop for reading
+
+commit 025c973bf827000ea6b07b84b51a574dec1dce0f
+Author: Lazar Panov <lazarpanov2002@gmail.com>
+Date:   Mon Mar 13 18:21:53 2023 +0100
+
+    Add java class
+
+commit 24341b77803fe91045c98fcd4d31b28d47829936
+Author: Lazar Panov <lazarpanov2002@gmail.com>
+Date:   Mon Mar 13 18:19:31 2023 +0100
+
+    Initial commit
